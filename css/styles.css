@@ -275,8 +275,16 @@ input[type="submit"]:focus {
   margin: 20px 0 40px;
 }
 
+.profile-about table thead {
+  background-color: var(--sun-yellow);
+}
+
 .profile-about table td, .profile-about table th {
   padding: 0 15px;
+}
+
+.skill-years {
+  text-align: center;
 }
 
 /* work page */
