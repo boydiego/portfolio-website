@@ -257,6 +257,28 @@ input[type="submit"]:focus {
   padding: 0;
 }
 
+.profile-about div ul a {
+  text-decoration: none;
+  position: relative;
+}
+
+.profile-about div ul a::before {
+  position: absolute;
+  content: '';
+  background-color: #edc655;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
+  transition: width .3s;
+}
+
+.profile-about div ul a:hover:before {
+  width: 100%;
+}
+
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
           animation: 4s color-change infinite alternate linear;
@@ -341,7 +363,11 @@ input[type="submit"]:focus {
 }
 
 .profile-about table {
-  margin-top: 20px;
+  margin: 20px 0 40px;
+}
+
+.profile-about table td, .profile-about table th {
+  padding: 0 15px;
 }
 
 /* work page */
@@ -419,6 +445,11 @@ section h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 0 15px #357b7080;
+          box-shadow: 0 0 15px #357b7080;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
 }
 
 #contact-form #contact-email {
@@ -511,6 +542,10 @@ section h1 {
         -ms-flex: 0 1 150px;
             flex: 0 1 150px;
     height: 75px;
+  }
+
+  #contact-form {
+    padding: 20px 8px;
   }
 }
 

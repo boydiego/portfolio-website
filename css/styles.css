@@ -430,6 +430,7 @@ section h1 {
 
   h1 {
     font-size: 22px;
+    text-align: center;
   }
 
   #contact-form #contact-email,
