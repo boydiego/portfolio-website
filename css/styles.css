@@ -209,6 +209,10 @@ input[type="submit"]:focus {
   padding: 0;
 }
 
+.profile-about div ul a {
+  text-decoration: none;
+}
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
@@ -252,7 +256,11 @@ input[type="submit"]:focus {
 }
 
 .profile-about table {
-  margin-top: 20px;
+  margin: 20px 0 40px;
+}
+
+.profile-about table td, .profile-about table th {
+  padding: 0 15px;
 }
 
 /* work page */
