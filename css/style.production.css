@@ -366,8 +366,16 @@ input[type="submit"]:focus {
   margin: 20px 0 40px;
 }
 
+.profile-about table thead {
+  background-color: #edc655;
+}
+
 .profile-about table td, .profile-about table th {
   padding: 0 15px;
+}
+
+.skill-years {
+  text-align: center;
 }
 
 /* work page */
@@ -432,6 +440,10 @@ section h1 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.profile-contact a {
+  padding-bottom: 5px;
 }
 
 #contact-form {
@@ -585,6 +597,7 @@ section h1 {
 
   h1 {
     font-size: 22px;
+    text-align: center;
   }
 
   #contact-form #contact-email,
