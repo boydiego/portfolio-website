@@ -211,6 +211,22 @@ input[type="submit"]:focus {
 
 .profile-about div ul a {
   text-decoration: none;
+  position: relative;
+}
+
+.profile-about div ul a::before {
+  position: absolute;
+  content: '';
+  background-color: var(--sun-yellow);
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  transition: width .3s;
+}
+
+.profile-about div ul a:hover:before {
+  width: 100%;
 }
 
 .sun {
