@@ -331,6 +331,10 @@ section h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0 15px var(--primary-color-opacity-half);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
 }
 
 #contact-form #contact-email,
@@ -390,6 +394,10 @@ section h1 {
   .page-header__item:first-child {
     flex: 0 1 150px;
     height: 75px;
+  }
+
+  #contact-form {
+    padding: 20px 8px;
   }
 }
 
