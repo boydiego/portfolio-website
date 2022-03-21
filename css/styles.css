@@ -335,6 +335,10 @@ section h1 {
   text-align: center;
 }
 
+.profile-contact a {
+  padding-bottom: 5px;
+}
+
 #contact-form {
   display: flex;
   flex-direction: column;
