@@ -361,6 +361,12 @@ section h1 {
   border-right: 3px solid var(--primary-color-opacity-half);
 }
 
+#contact-form .mandatory {
+  color: var(--secondary-color);
+  font-size: 18px;
+  padding-right: .5rem;
+}
+
 #contact-form input[type="submit"] {
   width: fit-content;
 }
