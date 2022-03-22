@@ -20,7 +20,7 @@
           <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
         </li>
         <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+          <a href="about.html" role="menuitem" aria-label="About me" class="navigation-list__item">About</a>
         </li>
         <li role="presentation">
           <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
@@ -46,13 +46,13 @@
   
     <form action="" method="post" id="contact-form">
       <label class="standard-label" for="contact-email">* E-mail:</label>
-      <input type="email" id="contact-email" required>
+      <input type="email" id="contact-email" required aria-required="true">
   
       <label class="standard-label" for="contact-telephone">Telephone</label>
       <input type="tel" id="contact-telephone">
   
       <label class="standard-label" for="contact-message">* Message:</label>
-      <textarea maxlength="240" placeholder="max 240 characters" id="contact-message" required></textarea>
+      <textarea maxlength="240" placeholder="max 240 characters" aria-label="message box for maximal 240 characters" id="contact-message" required aria-required="true"></textarea>
   
       <input type="submit" value="Send message">
     </form>
