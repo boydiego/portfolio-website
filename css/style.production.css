@@ -25,7 +25,7 @@ h2 font-size: 24px;
 }
 
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: Barlow, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -35,7 +35,8 @@ li {
   list-style-type: none;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 700;
 }
 
@@ -55,7 +56,8 @@ a:visited {
   color: #05676e;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -71,7 +73,7 @@ button {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgb(0 0 0 / 30%);
   -webkit-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -85,7 +87,7 @@ button {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgb(0 0 0 / 30%);
   -webkit-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -99,7 +101,7 @@ input[type="submit"] {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgb(0 0 0 / 30%);
   -webkit-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -165,62 +167,63 @@ input[type="submit"]:focus {
   position: relative;
 }
 
-.navigation-list__item:before {
+.navigation-list__item::before {
   position: absolute;
   opacity: 0;
   content: "";
   background: #489c79;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.navigation-list__item:after {
+.navigation-list__item::after {
   position: absolute;
   opacity: 0;
   content: "";
   background: #489c79;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.navigation-list__item:before {
+.navigation-list__item::before {
   width: 0%;
   height: 2px;
   right: 0%;
   top: 0%;
 }
 
-.navigation-list__item:after {
+.navigation-list__item::after {
   width: 2px;
   height: 0;
   right: 0%;
   top: 0%;
 }
 
-.navigation-list__item:hover:before,
-.navigation-list__item:hover:after {
+.navigation-list__item:hover::before,
+.navigation-list__item:hover::after {
   opacity: 1;
 }
 
-.navigation-list__item:hover:before {
+.navigation-list__item:hover::before {
   width: 50%;
 }
 
-.navigation-list__item:hover:after {
+.navigation-list__item:hover::after {
   height: 50%;
 }
 
-.navigation-list__item--active:before {
+.navigation-list__item--active::before {
   width: 100%;
 }
-.navigation-list__item--active:after {
+
+.navigation-list__item--active::after {
   height: 100%;
 }
 
-.navigation-list__item--active:before,
-.navigation-list__item--active:after {
+.navigation-list__item--active::before,
+.navigation-list__item--active::after {
   opacity: 1;
 }
 
@@ -240,7 +243,9 @@ input[type="submit"]:focus {
 }
 
 /* about me page */
-.profile-about, .profile-about div, .profile-about div ul li {
+.profile-about,
+.profile-about div,
+.profile-about div ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,18 +269,18 @@ input[type="submit"]:focus {
 
 .profile-about div ul a::before {
   position: absolute;
-  content: '';
+  content: "";
   background-color: #edc655;
   bottom: 0;
   left: 0;
   height: 2px;
   width: 0;
-  -webkit-transition: width .3s;
-  -o-transition: width .3s;
-  transition: width .3s;
+  -webkit-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
-.profile-about div ul a:hover:before {
+.profile-about div ul a:hover::before {
   width: 100%;
 }
 
@@ -298,9 +303,11 @@ input[type="submit"]:focus {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -310,9 +317,11 @@ input[type="submit"]:focus {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -323,6 +332,7 @@ input[type="submit"]:focus {
     -webkit-transform: translate(0, 50px);
             transform: translate(0, 50px);
   }
+
   100% {
     -webkit-transform: translate(200px, 50px);
             transform: translate(200px, 50px);
@@ -334,6 +344,7 @@ input[type="submit"]:focus {
     -webkit-transform: translate(0, 50px);
             transform: translate(0, 50px);
   }
+
   100% {
     -webkit-transform: translate(200px, 50px);
             transform: translate(200px, 50px);
@@ -345,6 +356,7 @@ input[type="submit"]:focus {
     -webkit-transform: translate(446px, 40px);
             transform: translate(446px, 40px);
   }
+
   100% {
     -webkit-transform: translate(100px, 40px);
             transform: translate(100px, 40px);
@@ -356,6 +368,7 @@ input[type="submit"]:focus {
     -webkit-transform: translate(446px, 40px);
             transform: translate(446px, 40px);
   }
+
   100% {
     -webkit-transform: translate(100px, 40px);
             transform: translate(100px, 40px);
@@ -370,7 +383,8 @@ input[type="submit"]:focus {
   background-color: #edc655;
 }
 
-.profile-about table td, .profile-about table th {
+.profile-about table td,
+.profile-about table th {
   padding: 0 15px;
 }
 
@@ -389,7 +403,9 @@ section h1 {
   display: inline-block;
   width: 33%;
 }
+
 /* end grid fallback */
+
 @supports (display: grid) {
   .grid {
     display: -ms-grid;
@@ -399,7 +415,7 @@ section h1 {
     gap: 20px;
     padding: 10px 4rem 0;
   }
-  
+
   .grid__item {
     background-color: lightgray;
     padding: 15px;
@@ -497,7 +513,7 @@ section h1 {
 #contact-form .mandatory {
   color: #b9314f;
   font-size: 18px;
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
 
 #contact-form input[type="submit"] {
@@ -544,9 +560,6 @@ section h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-
-  .page-header .small-logo {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100px;
             flex: 0 1 100px;
@@ -570,7 +583,7 @@ section h1 {
 @media all and (max-width: 660px) {
   .profile__portrait {
     float: none;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0;
   }
 
   .profile-index {
@@ -609,6 +622,6 @@ section h1 {
   #contact-form #contact-email,
   #contact-form #contact-telephone,
   #contact-form #contact-message {
-  width: 450px;
+    width: 450px;
   }
 }
