@@ -114,7 +114,8 @@ input[type="submit"]:focus {
 }
 
 .page-header__item:first-child {
-  height: 100px;
+  height: 80px;
+  margin: 10px 0;
 }
 
 .page-header__item:last-child {
