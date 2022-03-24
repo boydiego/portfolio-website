@@ -292,7 +292,7 @@ input[type="submit"]:focus {
 
 .profile-about table td,
 .profile-about table th {
-  padding: 0 15px;
+  padding: 5px 15px;
 }
 
 .skill-years {
