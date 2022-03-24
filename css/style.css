@@ -406,6 +406,23 @@ section h1 {
   .grid {
     grid-template-columns: 1fr;
   }
+
+  .page-header .logo {
+    display: none;
+  }
+
+  .page-header .small-logo {
+    display: none;
+  }
+
+  .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .navigation-list li:first-child {
+    margin-left: 0;
+  }
 }
 
 @media all and (min-width: 501px) and (max-width: 750px) {
@@ -414,7 +431,7 @@ section h1 {
   }
 }
 
-@media all and (max-width: 515px) {
+@media all and (min-width: 501px) and (max-width: 515px) {
   .page-header .logo {
     display: none;
   }
