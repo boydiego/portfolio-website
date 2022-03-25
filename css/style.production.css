@@ -285,6 +285,10 @@ input[type="submit"]:focus {
   width: 100%;
 }
 
+.button-downloadcv:visited {
+  color: #fff;
+}
+
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
           animation: 4s color-change infinite alternate linear;
