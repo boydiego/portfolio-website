@@ -410,10 +410,7 @@ section h1 {
     grid-template-columns: 1fr;
   }
 
-  .page-header .logo {
-    display: none;
-  }
-
+  .page-header .logo,
   .page-header .small-logo {
     display: none;
   }
