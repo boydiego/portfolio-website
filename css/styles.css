@@ -395,6 +395,27 @@ section h1 {
   max-width: 100%;
 }
 
+/* scroll up (pages: About, Contact) */
+.scroll-up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+
+.scroll-up:hover,
+.scroll-up:active {
+  opacity: 1;
+}
+
+.scroll-up .fa-circle-arrow-up {
+  color: var(--dark-grey);
+  font-size: 2.5em;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
 /* footer */
 .page-footer {
   clear: both;
@@ -495,5 +516,11 @@ section h1 {
   #contact-form #contact-telephone,
   #contact-form #contact-message {
     width: 450px;
+  }
+}
+
+@media all and (min-width: 950px) {
+  .scroll-up {
+    right: 30px;
   }
 }
